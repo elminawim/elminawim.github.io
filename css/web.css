@@ -1,0 +1,303 @@
+/*Start Global*/
+
+*{
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+body{
+
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*End Global*/
+
+/*Start Navbar*/
+
+.navbar{
+  font-size: 18px;
+  height: 0;
+  color: #fff;
+  position: relative;
+  z-index: 2
+
+
+}
+.navbar .brand{
+  float: left;
+  width: 50%;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.navbar .links{
+  float: left;
+  width: 50%;
+  margin-top: 25px;
+}
+
+.navbar .links li{
+  display: inline-block;
+  padding: 10px 0px;
+  margin: 0px 10px;
+
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+  font-size: 18px;
+}
+.navbar .links li a{
+  color:#fff;
+  text-decoration: none;
+}
+.navbar .links li.active a,
+.navbar .links li a :hover {
+  color: #1abc9c;
+
+}
+.navbar .links li.active,
+.navbar .links li:hover {
+
+  border-bottom: 2px solid #1abc9c;
+}
+
+/*End NavBar*/
+/*Start Header*/
+.header{
+  background: url('../images/header3.jpg');
+  position: relative;
+
+}
+.header .overlay{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  z-index: 1;
+}
+.header .bx-viewport{
+  height: 100% !important;
+}
+.header .bx-wrapper {
+  box-shadow: none;
+  border: 0;
+  background: none;
+  height: 100% !important;
+  text-align: center;
+
+
+}
+.header .bxslider{
+  height: 100% ;
+
+}
+
+.header .bxslider li{
+  display: block;
+}
+
+.header .bxslider li h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.header .bxslider li h2 span{
+  color: #1abc9c;
+}
+/*End Header*/
+/*Start services*/
+.services{
+
+  padding: 80px 20px 40px;
+
+}
+.services h2{
+  margin: 0 0 50px;
+  font-weight: normal;
+}
+.services .item{
+  float: left;
+  width: 33.33333%;
+  margin-bottom: 20px;
+
+}
+
+.services .item i{
+color: #1abc9c;
+float: left;
+width: 20%;
+margin-top: 10px;
+margin-left: 5%;
+}
+
+.services .item .info{
+  float: left;
+  width: 75%;
+}
+.services .item .info h3{
+  font-weight: normal;
+  color: #535353;
+  margin-bottom: 15px;
+}
+
+.services .item .info p{
+  margin-top: 0;
+  color: #888
+}
+
+.our-team{
+  padding: 40px 20px;
+}
+.our-team .box{
+  float: left;
+  width:20%;
+}
+
+.our-team .box p{
+  color: #888;
+  line-height: 1.2;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.our-team .box:first-child{
+  width: 35%;
+}
+
+.our-team .box:not(:first-child){
+width: 15.25%;
+margin-left: 1%;
+position: relative;
+ transition: all 1s ease-in-out;
+}
+
+.our-team .box:not(:first-child) .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, .8);
+    line-height: 183px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    display: none;
+
+}
+
+.our-team .box:not(:first-child):hover .overlay{
+    display: block;
+}
+
+.our-team .box:not(:first-child) img{
+    width: 100%;
+}
+
+.our-team h2{
+  font-weight: normal;
+  padding: 0 0 15px;
+}
+
+
+/*End services*/
+
+/*Start Testimonian*/
+
+.testim{
+    background: url(../images/call.jpg);
+    -webkit-background-sizing:cover;
+    -moz-background-sizing:cover;
+    -o-background-sizing:cover;
+    background-sizing:cover;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 80px 0;
+
+}
+.testim h2{
+    margin: 80px 0 10px;
+    font-size: 40px ;
+}
+.testim q{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #d0d0d0;
+    display: block;
+    margin-top: 60px;
+}
+.testim p{
+    font-size: 25px;
+    color: #1abc9c;
+}
+.testim .t-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(5, 5, 0, .9);
+}
+.testim .slider > div{
+    display: none;
+}
+.testim .slider .active{
+    display: block;
+}
+/*End Testimonian*/
+/*Stat Projects*/
+.our-projects{
+    padding: 60px 0;
+    height: 2000px;
+}
+.our-projects h2{
+    font-weight: normal;
+}
+.our-projects ul li{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+/*End Projects*/
+/*Start My Framework*/
+.clearfix{
+  clear: both;
+}
+
+.special-heading{
+  position: relative;
+}
+
+.special-heading:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 40px;
+  border-bottom: 2px solid #333;
+
+}
+
+.separator{
+  border: 1px solid #eee;
+}
+/*End My Framework*/
